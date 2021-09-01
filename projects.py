@@ -1,24 +1,24 @@
-# guessing number game
+#guessing number game
 
-# winning_number=59
-# import random     ##these two lines are used when we want a random  winning number
-# winning_number =random.randint(1,100)
-# guess=0
-# number=int(input("guess any random number between 0-100 and u win:::"))
-# while True: ### or ## while not game_over:
-#     if number==winning_number:
-#         print(f"you won!!,and you guessed this number in {guess} times")
-#         game_over=True
-#         break
-#     else:
-#         if number < winning_number:
-#                 print("too low")
-#         else:
-#             if number>winning_number:
-#                 print("too high")
+winning_number=59
+import random     ##these two lines are used when we want a random  winning number
+winning_number =random.randint(1,100)
+guess=0
+number=int(input("guess any random number between 0-100 and u win:::"))
+while True: ### or ## while not game_over:
+    if number==winning_number:
+        print(f"you won!!,and you guessed this number in {guess} times")
+        game_over=True
+        break
+    else:
+        if number < winning_number:
+                print("too low")
+        else:
+            if number>winning_number:
+                print("too high")
 
-#     guess+=1
-#     number=int(input("guess again:"))
+    guess+=1
+    number=int(input("guess again:"))
 
 
 # rock paper scissor game
@@ -80,70 +80,70 @@
 # calculator
 
 
-""" Calculator
-----------------------------------------
-"""
-def addition ():
-    print("Addition")
-    n = float(input("Enter the number: "))
-    t = 0 
-    ans = 0
-    while n != 0:
-        ans = ans + n
-        t+=1
-        n = float(input("Enter another number (0 to calculate): "))
-    return [ans,t]
-def subtraction ():
-    print("Subtraction")
-    n = float(input("Enter the number: "))
-    t = 0 
-    sum = 0
-    while n != 0:
-        ans = ans - n
-        t+=1
-        n = float(input("Enter another number (0 to calculate): "))
-    return [ans,t]
-def multiplication ():
-    print("Multiplication")
-    n = float(input("Enter the number: "))
-    t = 0
-    ans = 1
-    while n != 0:
-        ans = ans * n
-        t+=1
-        n = float(input("Enter another number (0 to calculate): "))
-    return [ans,t]
-def average():
-    an = []
-    an = addition()
-    t = an[1]
-    a = an[0]
-    ans = a / t
-    return [ans,t]
-while True:
-    list = []
-    print(" My first python program!")
-    print(" Simple Calculator in python by Malik Umer Farooq")
-    print(" Enter 'a' for addition")
-    print(" Enter 's' for substraction")
-    print(" Enter 'm' for multiplication")
-    print(" Enter 'v' for average")
-    print(" Enter 'q' for quit")
-    c = input(" ")
-    if c != 'q':
-        if c == 'a':
-            list = addition()
-            print("Ans = ", list[0], " total inputs ",list[1])
-        elif c == 's':
-            list = subtraction()
-            print("Ans = ", list[0], " total inputs ",list[1])
-        elif c == 'm':
-            list = multiplication()
-            print("Ans = ", list[0], " total inputs ",list[1])
-        elif c == 'v':
-            list = average()
-            print("Ans = ", list[0], " total inputs ",list[1])
-        else:
-            print ("Sorry, invilid character")
-    else:
-        break
+# """ Calculator
+# ----------------------------------------
+# """
+# def addition ():
+#     print("Addition")
+#     n = float(input("Enter the number: "))
+#     t = 0 
+#     ans = 0
+#     while n != 0:
+#         ans = ans + n
+#         t+=1
+#         n = float(input("Enter another number (0 to calculate): "))
+#     return [ans,t]
+# def subtraction ():
+#     print("Subtraction")
+#     n = float(input("Enter the number: "))
+#     t = 0 
+#     sum = 0
+#     while n != 0:
+#         ans = ans - n
+#         t+=1
+#         n = float(input("Enter another number (0 to calculate): "))
+#     return [ans,t]
+# def multiplication ():
+#     print("Multiplication")
+#     n = float(input("Enter the number: "))
+#     t = 0
+#     ans = 1
+#     while n != 0:
+#         ans = ans * n
+#         t+=1
+#         n = float(input("Enter another number (0 to calculate): "))
+#     return [ans,t]
+# def average():
+#     an = []
+#     an = addition()
+#     t = an[1]
+#     a = an[0]
+#     ans = a / t
+#     return [ans,t]
+# while True:
+#     list = []
+#     print(" My first python program!")
+#     print(" Simple Calculator in python by Malik Umer Farooq")
+#     print(" Enter 'a' for addition")
+#     print(" Enter 's' for substraction")
+#     print(" Enter 'm' for multiplication")
+#     print(" Enter 'v' for average")
+#     print(" Enter 'q' for quit")
+#     c = input(" ")
+#     if c != 'q':
+#         if c == 'a':
+#             list = addition()
+#             print("Ans = ", list[0], " total inputs ",list[1])
+#         elif c == 's':
+#             list = subtraction()
+#             print("Ans = ", list[0], " total inputs ",list[1])
+#         elif c == 'm':
+#             list = multiplication()
+#             print("Ans = ", list[0], " total inputs ",list[1])
+#         elif c == 'v':
+#             list = average()
+#             print("Ans = ", list[0], " total inputs ",list[1])
+#         else:
+#             print ("Sorry, invilid character")
+#     else:
+#         break
